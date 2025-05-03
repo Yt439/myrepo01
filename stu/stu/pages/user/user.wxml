@@ -1,0 +1,35 @@
+<view class="user-profile">
+  <!-- 用户头像和昵称 -->
+  <view class="user-info">
+    <!-- <van-image 
+      class="avatar" 
+      src="{{userInfo.img}}" 
+      mode="aspectFill" 
+      round
+      bindtap="changeAvatar"
+      lazy-load 
+      binderror="onImgError"
+    /> -->
+    <image 
+    src="{{userInfo.img}}" 
+    mode="aspectFill" 
+    class="avatar" 
+    bindtap="changeAvatar" 
+  />
+    <text class="nickname">{{userInfo.username}}</text>
+  </view>
+
+  <!-- 答题记录 -->
+  <van-cell-group>
+    <van-cell title="答题记录" is-link bindtap="goToRecords" />
+  </van-cell-group>
+
+  <!-- 修改用户信息 -->
+  <van-button type="primary" block bindtap="goToEditProfile">修改用户信息</van-button>
+
+  <!-- 分割线 -->
+  <view class="divider"></view>
+
+<!-- 退出登录按钮 -->
+<van-button type="danger" block bindtap="logout">退出登录</van-button>
+</view>

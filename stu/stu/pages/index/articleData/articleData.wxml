@@ -1,0 +1,23 @@
+<view class="article-detail">
+  <!-- 文章标题 -->
+  <view class="article-title">
+    <text class="title">{{article.title}}</text>
+  </view>
+
+  <!-- 文章内容 -->
+  <view class="article-content">
+    <text class="label">文章内容：</text>
+    <text>{{article.content}}</text>
+  </view>
+
+  <!-- 文章翻译 -->
+  <view class="article-translation">
+    <text class="label">文章翻译：</text>
+    <text>{{article.content_fanyi}}</text>
+  </view>
+
+  <!-- 返回按钮 -->
+  <view class="back-button">
+    <van-button type="default" bindtap="goBack">返回</van-button>
+  </view>
+</view>

@@ -1,0 +1,52 @@
+<view class="edit-profile">
+  <van-form>
+    <!-- 用户名 -->
+    <van-field
+      name="username"
+      label="用户名"
+      placeholder="请输入用户名"
+      value="{{username}}"
+      bind:input="onUsernameInput"
+    />
+    <!-- 邮箱 -->
+    <van-field
+      name="email"
+      label="邮箱"
+      placeholder="请输入邮箱"
+      value="{{email}}"
+      bind:input="onEmailInput"
+    />
+    <!-- 地址 -->
+    <van-field
+      name="address"
+      label="地址"
+      placeholder="请输入地址"
+      value="{{address}}"
+      bind:input="onAddressInput"
+    />
+    <!-- 密码 -->
+    <van-field
+      name="password"
+      label="密码"
+      type="password"
+      placeholder="请输入密码"
+      value="{{password}}"
+      bind:input="onPasswordInput"
+    />
+    <!-- 确认密码 -->
+    <van-field
+      name="confirmPassword"
+      label="确认密码"
+      type="password"
+      placeholder="请再次输入密码"
+      value="{{confirmPassword}}"
+      bind:input="onConfirmPasswordInput"
+    />
+    <!-- 提交按钮 -->
+    <div style="margin: 16px;">
+      <van-button round block type="info" bindtap="onSubmit">
+        保存
+      </van-button>
+    </div>
+  </van-form>
+</view>

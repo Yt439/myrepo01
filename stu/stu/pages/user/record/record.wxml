@@ -1,0 +1,12 @@
+<view class="records">
+  <van-cell-group>
+    <van-cell 
+      wx:for="{{records}}" 
+      wx:key="id" 
+      title="第{{item.numbers}}次答题" 
+      value="得分：{{item.total_score}}" 
+      data-number="{{item.numbers}}"
+      bind:click="goToDetail"
+    />
+  </van-cell-group>
+</view>

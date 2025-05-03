@@ -1,0 +1,8 @@
+cd .\LearningEnglish\
+python .\manage.py runserver
+
+访问地址
+http://127.0.0.1:8000/admin
+管理员账号密码
+admin
+admin

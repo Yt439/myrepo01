@@ -1,0 +1,89 @@
+/* 全局样式 */
+page {
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  /* display: flex; */
+  align-items: center;
+  margin-bottom: 20px;
+}
+.label{
+  font-size: 60rpx;
+  position: relative; /* 设置为相对定位 */
+  top: 60rpx; /* 向下移动 20 像素 */
+}
+
+.input-group .label {
+  width: 80px;
+  font-size: 16px;
+  color: #333;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 500rpx;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #1aad19;
+  outline: none;
+}
+
+.login-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #1aad19;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #179b16;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.link {
+  color: #1aad19;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s;
+  align-self: flex-end;
+
+}
+
+.link:hover {
+  text-decoration: underline;
+}

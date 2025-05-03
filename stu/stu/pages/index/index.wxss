@@ -1,0 +1,65 @@
+.home {
+  padding: 20px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar-img {
+  width: 80px; /* 适当缩小头像 */
+  height: 80px;
+  border-radius: 50%; /* 圆形头像 */
+  margin-bottom: 20px; /* 图像下方的间距 */
+}
+
+.welcome-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  display: block; /* 确保标题占据一整行 */
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #777;
+  margin-top: 30rpx;
+}
+
+.modules {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.module {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.module-left {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.module-button {
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 20px; /* 圆角按钮 */
+}
+
+.van-button {
+  margin-left: 10px;
+}

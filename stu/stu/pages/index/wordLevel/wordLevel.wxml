@@ -1,0 +1,14 @@
+<view class="word-level-list">
+  <view class="word-level-item" bindtap="navigateToLevel" data-level="1">
+    <text class="level-text">​雅思词汇</text>
+  </view>
+  <view class="word-level-item" bindtap="navigateToLevel" data-level="2">
+    <text class="level-text">​托福词汇</text>
+  </view>
+  <view class="word-level-item" bindtap="navigateToLevel" data-level="3">
+    <text class="level-text">​GRE词汇</text>
+  </view>
+  <view class="word-level-item" bindtap="navigateToLevel" data-level="4">
+    <text class="level-text">GMAT词汇</text>
+  </view>
+</view>

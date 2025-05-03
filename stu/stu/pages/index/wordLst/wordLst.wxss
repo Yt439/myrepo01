@@ -1,0 +1,65 @@
+/* 控制 van-cell 的布局 */
+van-cell {
+  display: flex; /* 使用 flex 布局 */
+  align-items: center; /* 垂直居中 */
+  padding: 6px 10px; /* 减小内边距，避免单元格过高 */
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 6px; /* 单元格之间的间距 */
+  height: auto; /* 自适应高度 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 增加阴影效果 */
+}
+
+/* 左侧图标的样式 */
+van-icon {
+  font-size: 18px; /* 图标大小 */
+  color: #007aff; /* 图标颜色 */
+  margin-right: 12px; /* 图标与文字的间距 */
+}
+
+/* 单词和翻译信息的容器 */
+.word-info {
+  display: flex;
+  justify-content: space-between; /* 左右两端对齐 */
+  width: 100%; /* 占满剩余空间 */
+  align-items: center; /* 垂直居中 */
+}
+
+/* 单词的样式 */
+.word-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  flex: 1; /* 使单词占据最大空间 */
+  margin-right: 8px; /* 单词和翻译之间的间距 */
+  text-align: left; /* 确保单词靠左显示 */
+}
+
+/* 翻译的样式 */
+.word-translation {
+  font-size: 14px;
+  color: #999;
+  text-align: right; /* 翻译右对齐 */
+  flex-shrink: 0; /* 防止翻译文字缩小 */
+}
+
+/* 控制 van-cell-group 的宽度 */
+van-cell-group {
+  max-width: 600px; /* 控制整体宽度 */
+  margin: 0 auto; /* 居中显示 */
+}
+
+/* 小屏幕下的适配 */
+@media screen and (max-width: 768px) {
+  van-cell {
+    padding: 4px 8px; /* 内边距进一步缩小 */
+  }
+
+  .word-name {
+    font-size: 14px; /* 小屏幕下减少单词的字号 */
+  }
+
+  .word-translation {
+    font-size: 12px; /* 小屏幕下减少翻译的字号 */
+  }
+}

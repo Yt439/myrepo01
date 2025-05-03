@@ -1,0 +1,42 @@
+<!-- pages/notification-detail/notification-detail.wxml -->
+<view class="notification-detail">
+  <!-- 通知标题和时间 -->
+  <view class="notification-header">
+    <text class="notification-title">{{notification.title}}</text>
+    <text class="notification-time">{{notification.date}}</text>
+  </view>
+
+  <!-- 通知内容 -->
+  <view class="notification-content">
+    <text>{{notification.content}}</text>
+  </view>
+
+  <!-- 评论列表 -->
+  <view class="comment-section">
+    <view class="comment-item" wx:for="{{comments}}" wx:key="id">
+      <view class="comment-header">
+        <image class="comment-avatar" src="{{item.img}}" mode="aspectFill"></image>
+        <view class="comment-info">
+          <text class="comment-author">{{item.user}}</text>
+          <text class="comment-time">{{item.date}}</text>
+        </view>
+      </view>
+      <view class="comment-content">
+        <text>{{item.content}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 评论输入框和发送按钮 -->
+  <view class="comment-input">
+    <input 
+      type="text" 
+      placeholder="写评论..." 
+      bindinput="onCommentInput" 
+      value="{{newComment}}" 
+      bindconfirm="onPostComment"
+      confirm-type="send"
+    />
+    <van-button type="primary" bindtap="onPostComment">发送</van-button>
+  </view>
+</view>

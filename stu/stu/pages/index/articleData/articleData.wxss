@@ -1,0 +1,44 @@
+.article-detail {
+    padding: 20px;
+    background-color: #f4f5f7;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  .article-title {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e5e5e5;
+  }
+  
+  .title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #2c3e50;
+    line-height: 1.4;
+  }
+  
+  .article-content, .article-translation {
+    margin-bottom: 25px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .label {
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 8px;
+  }
+  
+  .article-content text, .article-translation text {
+    font-size: 16px;
+    color: #7f8c8d;
+    line-height: 1.6;
+  }
+  
+  .back-button {
+    margin-top: 20px;
+    text-align: center;
+  }
+  

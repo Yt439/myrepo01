@@ -1,0 +1,15 @@
+<van-cell-group>
+  <van-cell 
+    wx:for="{{words}}" 
+    wx:key="id" 
+    bindtap="navigateToWordDetail" 
+    data-id="{{item.id}}"
+  >
+    <van-icon name="arrow" slot="left-icon" />
+    <view class="word-info">
+      <text class="word-name">{{item.title_fanyi}}</text>
+      <!-- <text class="word-translation">{{item.translation}}</text> -->
+      <van-icon name="arrow" />
+    </view>
+  </van-cell>
+</van-cell-group>

@@ -1,0 +1,37 @@
+<view class="container">
+  <van-cell-group>
+    <block wx:for="{{records}}" wx:key="id" wx:for-item="record">
+      
+      <!-- 显示题目 -->
+      <van-cell title="{{record.question}}" class="question" />
+
+      <view class="options">
+        <block wx:for="{{record.choose}}" wx:key="id" wx:for-item="option">
+          <van-cell
+            title="{{option.option}}"
+            class="{{option.id === record.user_choose ? 'selected' : ''}}"
+          >
+            <!-- 如果用户选择了正确答案 -->
+            <view wx:if="{{option.id === record.user_choose && option.correct_option}}">
+              <text style="color: blue;">恭喜您，答对了</text>
+            </view>
+            <!-- 如果用户选择了错误答案 -->
+            <view wx:if="{{option.id === record.user_choose && !option.correct_option}}">
+              <text style="color: red;">您的答案</text>
+            </view>
+            <!-- 如果是正确答案但用户没有选择 -->
+            <view wx:if="{{option.correct_option && option.id !== record.user_choose}}">
+              <text style="color: green;">正确答案</text>
+            </view>
+          </van-cell>
+        </block>
+      </view>
+
+    </block>
+
+    <!-- 如果没有记录 -->
+    <block wx:if="{{records.length === 0}}">
+      <view>没有答题记录</view>
+    </block>
+  </van-cell-group>
+</view>

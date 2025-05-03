@@ -1,0 +1,19 @@
+<view class="announcement-page">
+  <van-list 
+    scroll-y 
+    finished="{{finished}}" 
+    loading-text="加载中..." 
+    bind:load="loadMoreAnnouncements"
+  >
+    <view class="announcement-item" wx:for="{{announcements}}" wx:key="id" bindtap="goToAnnouncementDetail" data-id="{{item.id}}">
+      <view class="announcement-header">
+        <text class="announcement-title">{{item.title}}</text>
+        <text class="announcement-time">{{item.createdAt}}</text>
+      </view>
+      <!-- <view class="content-preview-text">
+            {{ item.content }}
+        </view> -->
+
+    </view>
+  </van-list>
+</view>

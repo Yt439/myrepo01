@@ -1,0 +1,30 @@
+<view class="container">
+  <!-- 显示当前题目 -->
+  <view class="question">
+    <text>{{questions[currentIndex].question}}</text>
+  </view>
+
+  <!-- 选项列表，点击选项进行选择 -->
+  <view wx:for="{{questions[currentIndex].choose}}" wx:key="index" class="option" bindtap="onAnswer" data-index="{{item.id}}" data-answer="{{ questions[currentIndex].id }}">
+    <button class="option-button">{{item.option}}</button>
+  </view>
+
+  <!-- 显示答题进度 -->
+  <view class="footer">
+    <text>已答 {{answeredCount}} / 10</text>
+  </view>
+
+  <!-- 答题结果弹窗 -->
+  <van-dialog 
+  id="result-dialog"
+  title="答题完成" 
+  show="{{showDialog}}"
+  show-cancel-button 
+  confirm-button-text="查看答题记录" 
+  cancel-button-text="返回首页"
+  message="答对{{ yes_count }}题，答错{{ no_count }}题"
+  bind:confirm="onConfirm"
+  bind:cancel="onCancel"
+/>
+
+</view>

@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/wordLevel/wordLevel",
+    "pages/index/wordLst/wordLst",
+    "pages/index/wordData/wordData",
+    "pages/index/articleList/articleList",
+    "pages/index/articleData/articleData",
+    "pages/shequ/shequ",
+    "pages/shequ/tongzhi/tongzhi",
+    "pages/logs/logs",
+    "pages/paihang/paihang",
+    "pages/questions/questions",
+    "pages/user/user",
+    "pages/user/updateuser/updateuser",
+    "pages/user/record/record",
+    "pages/user/jilu/jilu",
+    "pages/login/login",
+    "pages/login/register/register",
+    "pages/login/forgot-password/forgot-password"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "英语词汇学习",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar":{
+    "list": [
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页"
+      },
+      {
+        "pagePath":"pages/shequ/shequ",
+        "text":"社区公告"
+      },
+      {
+        "pagePath":"pages/paihang/paihang",
+        "text":"排行"
+      },
+      {
+        "pagePath":"pages/user/user",
+        "text":"个人中心"
+      }
+    ]
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+    "van-tabbar": "/miniprogram_npm/@vant/weapp/tabbar/index",
+    "van-button": "/miniprogram_npm/@vant/weapp/button/index",
+    "van-card": "/miniprogram_npm/@vant/weapp/card/index",
+    "van-cell-group": "/miniprogram_npm/@vant/weapp/cell-group/index",
+    "van-cell": "/miniprogram_npm/@vant/weapp/cell/index",
+    "van-field": "/miniprogram_npm/@vant/weapp/field/index",
+    "van-uploader": "/miniprogram_npm/@vant/weapp/uploader/index",
+    "van-radio-group": "@vant/weapp/radio-group/index",
+    "van-radio": "@vant/weapp/radio/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-tabbar-item": "/miniprogram_npm/@vant/weapp/tabbar-item/index"
+  }
+}

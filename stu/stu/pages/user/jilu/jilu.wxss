@@ -1,0 +1,29 @@
+/* 题目样式 */
+.question {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 选项区域 */
+.options {
+  margin-bottom: 20px;
+}
+
+/* 正确选项和用户选择的选项高亮显示 */
+.correct-option {
+  background-color: #d4f8e8; /* 绿色背景，正确答案 */
+  border-radius: 5px;
+}
+
+.user-choice {
+  background-color: #f8d4d4; /* 红色背景，用户选择 */
+  border-radius: 5px;
+}
+
+/* 时间显示样式 */
+.create-time {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #777;
+}

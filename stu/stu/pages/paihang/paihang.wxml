@@ -1,0 +1,49 @@
+<view class="rank-container">
+  <!-- 排行榜标题 -->
+  <view class="rank-title">排行榜</view>
+
+  <!-- 排行榜列表 -->
+  <van-cell-group>
+    <block wx:for="{{rankList}}" wx:key="index">
+      <van-cell>
+        <view class="rank-item" bindtap="showDetails" data-index="{{item}}">
+          <!-- 头像 -->
+          <image class="rank-avatar" src="http://localhost:8000{{item.img}}" mode="aspectFill"></image>
+          <!-- 昵称、分数、上次登录时间 -->
+          <view class="rank-info">
+            <text class="rank-nickname">{{item.username}}</text>
+            <text class="rank-score">分数: {{item.score}}</text>
+            <text class="rank-last-login">上次登录: {{item.end_time}}</text>
+          </view>
+        </view>
+      </van-cell>
+    </block>
+  </van-cell-group>
+
+  <!-- 弹出框 - 用户详情 -->
+  <view wx:if="{{isModalVisible}}" class="modal-overlay" catchtouchmove="preventScroll">
+    <view class="modal">
+      <view class="modal-header">用户详情</view>
+      <view class="modal-content">
+        <view class="modal-item">
+          <text>用户名: {{selectedUser.username}}</text>
+        </view>
+        <view class="modal-item">
+          <text>答题数量: {{selectedUser.Answers_count}}</text>
+        </view>
+        <view class="modal-item">
+          <text>分数: {{selectedUser.score}}</text>
+        </view>
+        <view class="modal-item">
+          <text>注册时间: {{selectedUser.create_time}}</text>
+        </view>
+        <view class="modal-item">
+          <text>最后登录时间: {{selectedUser.end_time}}</text>
+        </view>
+      </view>
+      <view class="modal-footer">
+        <button class="modal-btn" bindtap="closeModal">关闭</button>
+      </view>
+    </view>
+  </view>
+</view>

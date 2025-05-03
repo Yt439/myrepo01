@@ -1,0 +1,46 @@
+.user-profile {
+  padding: 20px;
+  background-color: #f4f5f7;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column; /* 垂直排列头像和昵称 */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px; /* 给头像和昵称之间添加一些间距 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 增加头像阴影 */
+}
+
+.nickname {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.van-cell-group {
+  margin-top: 15px;
+}
+
+.van-cell {
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.van-button {
+  margin-top: 20px;
+}
+
+.divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 20px 0;
+}

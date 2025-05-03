@@ -1,0 +1,7 @@
+<view class="tab-bar">
+  <van-tabbar active="{{active}}" bind:change="onTabChange">
+    <van-tabbar-item icon="home-o" text="首页"></van-tabbar-item>
+    <van-tabbar-item icon="search" text="预约"></van-tabbar-item>
+    <!-- 如果有更多标签，可以在这里继续添加 -->
+  </van-tabbar>
+</view>

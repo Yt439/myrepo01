@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="header">
+    <!-- <text class="title" style="display: block;">单词学习</text> -->
+    <text class="subtitle">英语词汇学习平台</text>
+  </view>
+  <view class="content">
+    <text class="word" bindtap="onWordClick" data-word="{{ word.word }}">{{ word.word }}</text>
+    <view class="options">
+      <view class="option">{{ word.fanyi }}</view>
+      <view class="option">{{ word.liju }}</view>
+      <view class="option">{{ word.liju_fanyi }}</view>
+    </view>
+    <view>
+    <van-button bindtap="goToPreviousWord" class="button-group" type="info" data-word="{{ word.prev_id }}">上一个</van-button>
+    <van-button bindtap="goToNextWord" class="button-group" type="info" data-word="{{ word.next_id }}">下一个</van-button>
+    </view>
+    
+    <!-- <button class="uncertain-button">不确定</button> -->
+  </view>
+  <view class="footer">
+    <!-- <text>已测试0个单词</text> -->
+    <text>英语词汇学习平台</text>
+  </view>
+</view>

@@ -1,0 +1,56 @@
+<view class="home">
+  <!-- 顶部头像 -->
+  <image class="avatar-img" src="{{userInfo.img}}" mode="aspectFill" />
+  
+  <!-- 欢迎文本 -->
+  <view class="welcome-text">
+    <text class="title">欢迎来到英语学习小程序</text>
+    <text class="subtitle">选择你想学习的模块</text>
+  </view>
+
+  <!-- 模块选择 -->
+  <view class="modules">
+    <view class="module">
+      <view class="module-left">
+        <text>单词学习</text>
+      </view>
+      <van-button 
+        class="module-button" 
+        type="primary" 
+        size="small" 
+        bindtap="navigateToWordLearning"
+      >
+        开始学习
+      </van-button>
+    </view>
+
+    <view class="module">
+      <view class="module-left">
+        <text>英语文章学习</text>
+      </view>
+      <van-button 
+        class="module-button" 
+        type="info" 
+        size="small" 
+        bindtap="navigateToArticleLearning"
+      >
+      
+        开始学习
+      </van-button>
+    </view>
+
+    <view class="module">
+      <view class="module-left">
+        <text>考试答题</text>
+      </view>
+      <van-button 
+        class="module-button" 
+        type="warning" 
+        size="small" 
+        bindtap="navigateToDictationLearning"
+      >
+        开始学习
+      </van-button>
+    </view>
+  </view>
+</view>
